@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 3000;
+   }
+  /*======================================= Start Navbar =======================================*/
+  .navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right ,#000407 , #010C39 , #010C39 );
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+  }
+  .navigation .logo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 900;
+  
+  }
+  .nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  
+  }
+  .nav-item a{
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .nav-item a:hover{
+    color: #ef3a7b;
+    text-decoration: none;
+    border-bottom: 1px solid #ef3a7b;
+  }
+  .btn-sign{
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #010C39;
+    border: 2px solid #fff;
+  }
+  .btn-sign:hover{
+    cursor: pointer;
+    color: #010C39;
+    background-color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+  }
+  /*======================================= End Navbar =======================================*/
+  
+  
+  /*======================================= Start Path Section =======================================*/
+  
+  section {
+    display: block;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .title{
+    color: #000407;
+    margin: 10% 0 ;
+    font-weight: 900;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #F66D7D 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    transition: 0.5s;
+    
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #F66D7D;
+    margin: 1em 0;
+  }
+  .card a {
+    color: #F66D7D;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border: 3px solid #F66D7D;
+    width: 100px;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .card img{
+    width: 60px;
+    border-radius: 50%;
+  }
+  .icon-wrapper {
+    background-color: #F66D7D;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .card:hover {
+    background-position: 0 100%;
+  }
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #F66D7D;
+  }
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+  .card:hover img {
+    background-color: #F66D7D;
+    width: 80%;
+  }
+  .card:hover a {
+    color: #f0f0f0;
+    border: 3px solid #f0f0f0;
+    text-decoration: none;
+    cursor: pointer;
+  
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+  
+  /*======================================= End Path Section =======================================*/
+  
+  /*===========================Footer style===============================*/
+  .footer-area {
+    display: block;
+    min-height: 100%;
+    background-image: linear-gradient(to right ,#000407 , #010C39 , #010C39 );
+    color: #fff;
+    margin-top: 10%;
+    }
+    .footer-area h6 {
+    color: #ef3a7b;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600; }
+    @media (max-width: 991px) {
+    .footer-area .col-lg-3:nth-child(3) .single-footer-widget, .footer-area .col-lg-3:nth-child(4) .single-footer-widget {
+      margin-bottom: 0; } }
+    @media (max-width: 570px) {
+    .footer-area .col-lg-3:nth-child(3) .single-footer-widget {
+      margin-bottom: 40px; } }
+    
+    .copy-right-text i,
+    .copy-right-text a {
+    color: #4ba0f9; }
+    
+    .instafeed {
+    margin: 0px -24px;
+    padding: 0 15px; }
+    @media (max-width: 767px) {
+    .instafeed {
+      margin: -16px; } }
+    @media (max-width: 575px) {
+    .instafeed {
+      margin: 0px;
+      padding: 0; } }
+    .instafeed li {
+    overflow: hidden;
+    width: 25%; }
+    .instafeed li img {
+      margin: 5px; }
+    
+    @media (max-width: 575px) {
+    .footer-social {
+    margin-top: 15px; } }
+    .footer-social a {
+    padding-left: 25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    @media (max-width: 575px) {
+    .footer-social a:first-child {
+      padding-left: 0; } }
+    .footer-social a:hover i {
+    color: #4ba0f9; }
+    .footer-social i {
+    color: #cccccc;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    @media (max-width: 991px) {
+    .footer-social {
+    text-align: left; } }
+    
+    .footer-top {
+    padding: 120px 0px; }
+    
+    @media (max-width: 991px) {
+    .single-footer-widget {
+    margin-bottom: 40px; } }
+    .single-footer-widget .footer-nav li {
+    list-style: none;
+    margin-bottom: 12px; }
+    @media (max-width: 991px) {
+    .single-footer-widget .footer-nav li {
+      margin-bottom: 3px; } }
+    .single-footer-widget .footer-nav li a {
+    color: #777777; }
+    .single-footer-widget .footer-nav li a:hover {
+      color: #ffffff; }
+    .single-footer-widget input {
+    border: 1px solid rgba(238, 238, 238, 0.15);
+    width: 80% !important;
+    font-weight: 300;
+    background: #2d2d3c;
+    color: #ffffff;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 14px;
+    border-right: 0px; }
+    .single-footer-widget input:focus {
+    box-shadow: none;
+    color: #ffffff;
+    background: #222222; }
+    .single-footer-widget .info {
+    position: absolute;
+    margin-top: 20%;
+    color: #fff;
+    font-size: 12px;
+    background: transparent; }
+    .single-footer-widget .info.valid {
+    color: green; }
+    .single-footer-widget .info.error {
+    color: red; }
+    .single-footer-widget .click-btn {
+    color: #ef3a7b;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 6px 12px;
+    border: 0; }
+    .single-footer-widget .click-btn:focus {
+    box-shadow: none; }
+    .single-footer-widget .click-btn i {
+    color: #fff; }
+    .single-footer-widget ::-moz-selection {
+    /* Code for Firefox */
+    background-color: #191919 !important;
+    color: #ffffff; }
+    .single-footer-widget ::selection {
+    background-color: #191919 !important;
+    color: #ffffff; }
+    .single-footer-widget ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #ffffff;
+    font-weight: 300; }
+    .single-footer-widget :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+    opacity: 1;
+    font-weight: 300; }
+    .single-footer-widget ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ffffff;
+    opacity: 1;
+    font-weight: 300; }
+    .single-footer-widget :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ffffff;
+    font-weight: 300; }
+    .single-footer-widget ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ffffff;
+    font-weight: 300; }
+    
+    .footer-bottom {
+    padding: 26px 0px;
+    border-top: 1px solid #333333; }
+    @media (max-width: 380px) {
+    .footer-bottom {
+      text-align: left !important; } }
+    
+    .footer-text a,
+    .footer-text i {
+    color: #4ba0f9; }
+    .msg-btn button{ 
+      width: 100px; font-weight: 
+      600; padding: 2px 20px; 
+      margin: 2px 10px; 
+      border: 2px solid #fff; 
+      background-color: #010C39; 
+      color: #fff; 
+    } 
+    .msg-btn button:hover{ 
+      cursor: pointer; 
+      border: 2px solid #ef3a7b; 
+      background-color: #ef3a7b; 
+      color: #fff; }  
+  /*======================================= End footer =======================================*/
+  
